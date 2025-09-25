@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hey</title>
+<style>
+    body{
+        background-color: #f5a6b3;
+        margin:0;
+    }
+    .box-again {
+        background-color:white;
+        align-items:center;
+        margin: 50px;
+        width:300x;
+        height: 500px;
+        padding: 20px;
+        border-radius: 10px;
+        outline: 4px solid white;
+        color:white;
+        position: relative;
+        overflow: hidden;
+    }
+    #bordering {
+        border: 10px solid transparent;
+        padding: 15px;
+        border-image: url(pic1.png) 30 stretch;
+    }
+    .hearts-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events:none;/*for clicks will pass through*/
+        z-index: 10;
+    }
+    .message {
+        position: relative;
+        z-index: 1;
+    }
+    .heart {
+        position:absolute;
+        color:#f5a6b3;
+        font-size: 15px;
+        opacity: 0.8;
+        animation-name: fall;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    .box-again p {
+        position:relative;
+        overflow:hidden;
+        color: hotpink;
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0px auto;
+        text-align: left;
+    }
+    .heart-button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: hotpink;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size:18px;
+        transition: background-color 0.3s ease;
+    }
+    .heart-button:hover{
+        background-color: deeppink;
+    }
+    /*im missing him while doing this ahhh*/
+    /*from here falling animation*/
+    @keyframes fall{
+        10% { /*at start let them be visible fully */
+            transform: translateY(-20px) translateX(0) rotate(0deg);/*starting*/
+            opacity: 1;/*full visibility*/
+        }
+        100% {
+            transform: translateY(100%) translateX(calc(-20px + 40px * var(--random-dir))) rotate(360deg);
+            /*the above code will make them FALL AND ROTATE*/
+            opacity: 0; /*fade out after it's done*/
+        }
+    }
+    @keyframes fall{
+        0% { /*at start let them be visible fully */
+            transform: translateY(500px) translateX(0) rotate(0deg);/*starting*/
+            opacity: 1;/*full visibility*/
+        }
+        100% {
+            transform: translateY(100%) translateX(calc(-20px + 40px * var(--random-dir))) rotate(360deg);
+            /*the above code will make them FALL AND ROTATE*/
+            opacity: 0; /*fade out after it's done*/
+        }
+    }
+</style>
+</head>
+</html>
+<body>
+<div class="box-again heart-border" id="bordering">
+    <div class="hearts-container"></div>
+    <div class = "message">
+    <p style="font-size:29px;"><b>My RUFULU ~❤️,</b></p>
+    <p style ="padding-left:20px;">
+        Rufus...I don't know the meaning of your name but if i could put a meaning to it i'd say ...RUFUS ~ a person with whom all of my dreams come true. You're my light in the darkest days and nights edo  dialouge vesindi ra anukuntunav kada.There were days where i was in extreme pain Rufus Rufus ani ninu taluchuko gane you healed me.
+    </p>
+    <p>Ninu first time chusina day keep remembering it, who knew that you would be my first KISS ani. Na kalla mundu roju veltunde kani i never thought things would really happen.Edi anukunte adi it just happens with you.Every single moment with you is special to me.Koncham gap dorikite na head lo tirugutune untav. Nito scooty mida,tunnel, U-turns, holding hands, ela cheptu pote there are some thousands of things. Ni <b>Voice</b> literally best voice, nuv first time matlada gane i was so happy enti ra babu voice kuda inta bagundi..vidu nak assalu padadu ani anukunna.
+    </p>
+    <p style="padding-left:20px;">
+        Nijam chepali ante HTML,CSS,Js nak em anta interest ledu but ni kosam i kept thinking em cheyali,Dabba kodutunna ani kadu but every single thing in this was my own idea to show my love towards you. So Nuvu, nuvve amma,na <b>Rufus</b> nuvu  <b>I LOVE YOU </b>..
+        Thanks for giving me beautiful days, i never thought i would be able to do the stuff i did with you.Those clouds, feelin safe, warmth, super genuine feelings all of em are a great combination kada.Sometimes i wonder how you bear with mi ani, I'm breathing your love everyday that's why i am actually living, actually living in the sense smiling from heart to fearing, loving you to death to dying while your not around, remembering you every time i breathe is the only reason thats making me survive this world.Idk nuvu Amberpet ki epudu ochavo but thanks for coming here and making my life like this Rufus.i can never forget you, every single moment with i keep replaying it marchipovadu oka moment kuda ani.whenever i remember you i don't just smile with my lips, na eyes kuda they smile. The most scariest thing and hardest thing is "Missing RUFUS". Nen epudu nidra kuda pataleni antha evarini miss avvale, fearing of YOU leaving ME anedi worst nightmare.Nuv nato unte chalu but nuvu nato inka future lo na present life lo undav ane thought itself kills me,Nijam ga i felt it. So yeah Mr.English sir garu em anna grammatical errors unte kindly patinchukokandi. I wanna ask you something telsa..Ah night when i texted you evaru ani nuv adigav then i sad "Radium pen?" ani apudu how was your expression?
+        just now i read your texts automatic ga na face mida smile pettestav.Ninu chudali ani untadi naku chaala, ninu life long chustune undepoyela oka nak oka varam edi ayina kavali.
+        <b style="font-family:Arial, Helvetica, sans-serif;font-size:16px">  You are pichi pichi ga Important to meh MY MAN</b>  ~ ~Your <b style="color:rgb(218, 70, 129)">JASMINE</b> 
+    </p>
+    </div>
+    <a href ="C:\Users\JASEMINE\Desktop\Trainings\R\foryuh.html" class="heart-button" id="touchMeBtn"> -> Touch me 🥰 </a>
+</div>
+<script>
+    const container = document.querySelector('.hearts-container');
+
+    function createHeart(){
+        const heart = document.createElement('div');
+        heart.classList.add('heart');
+        heart.textContent = '❤️';
+
+        heart.style.left = Math.random() * 100 + '%';
+        heart.style.animationDuration = (1 + Math.random() * 5) + 's';
+        heart.style.fontSize = (20 + Math.random() * 2) + 'px';
+        heart.style.setProperty('--random-dir', Math.random());
+
+        container.appendChild(heart);
+
+        setTimeout(() => {
+            heart.remove();
+        }, 3000);
+    }
+
+    // falling hearts continuously
+    setInterval(createHeart, 100);
+
+    // 💖 Burst of hearts on button click
+    function triggerHeartBurst() {
+        for (let i = 0; i < 300; i++) {
+            setTimeout(() => {
+                createHeart();
+            }, i * 100); // faster burst
+        }
+    }
+
+    // 🩷 Add event listener to "Touch Me" button
+    document.getElementById('touchMeBtn').addEventListener('click', function(e) {
+        e.preventDefault(); // stop immediate navigation
+        setInterval(createHeart, 15);
+
+        triggerHeartBurst(); // show burst of hearts
+
+        setTimeout(() => {
+            window.location.href = "next.html";
+        }, 1000); // go to next page after 1 sec
+    });
+</script>
+
+</body>
+</html>
